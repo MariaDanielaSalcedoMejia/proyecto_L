@@ -1,0 +1,23 @@
+/* Asegúrate de que el body y html ocupen el 100% de la altura de la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/* .container{background-image: url('https://st3.depositphotos.com/1585301/15176/i/450/depositphotos_151763386-stock-photo-tomato-sauce-in-bowl-on.jpg');
+} */
+
+/* Estilos para la main-container */
+.main-container {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/078/789/non_2x/fast-food-set-icons-fastfood-background-doodle-fast-food-icons-seamless-pattern-with-food-icons-food-icons-on-white-background-hand-drown-pattern-with-fast-food-icons-free-vector.jpg'); /* Ruta a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Opcional: Asegúrate de que el contenido también ocupe el 100% de la altura */
+.content {
+  flex: 1;
+}

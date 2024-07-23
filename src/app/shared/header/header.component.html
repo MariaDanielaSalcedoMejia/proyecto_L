@@ -1,0 +1,25 @@
+<body>
+  <header>
+    <div class="container flex items-center justify-between">
+      <div class="logo ">
+        <a href="../../page/inicio/inicio.component.html" class="flex items-center">
+          <img src="../../../assets/img/logo_L-removebg.png" alt="Logo" class="logo-img">
+        </a>
+        <span class="text-white titulo font-bold">Explosion del sabor</span>
+      </div>
+      <nav class="nav-menu flex justify-center">
+        <a href="#">Fritos</a>
+        <a href="#">Delicias Navideñas</a>
+        <a href="#">Postres</a>
+        <a href="#">Matrimonios y anchetas</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-menu').classList.toggle('active');
+    });
+  </script>
+</body>

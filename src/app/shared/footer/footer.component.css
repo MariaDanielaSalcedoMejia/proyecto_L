@@ -1,0 +1,49 @@
+.footer {
+  background-color: #500724; /* Cambia esto según el color de fondo deseado */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+}
+
+nav {
+  margin: 0 15px;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.link {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF; /* Cambia esto según el color del texto deseado */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #FFFFFF;
+}
+
+.social-icons a {
+  color: #FFFFFF; /* Cambia esto según el color de los íconos deseado */
+}
+.social-icons svg {
+  fill: #FFFFFF !important;
+}
