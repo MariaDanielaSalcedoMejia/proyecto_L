@@ -1,15 +1,14 @@
+// app.component.ts
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./shared/header/header.component";
-import { FooterComponent } from "./shared/footer/footer.component";
+import { HeaderComponent } from './shared/header/header.component'; // Asegúrate de usar la ruta correcta
+import { FooterComponent } from './shared/footer/footer.component'; // Asegúrate de usar la ruta correcta
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
 })
-export class AppComponent {
-  title = 'proyecto_L';
-}
+export class AppComponent {}

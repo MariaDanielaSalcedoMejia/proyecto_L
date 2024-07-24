@@ -3,10 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    console.log('Menu Open:', this.menuOpen); // Agrega esto para depuración
+  }
 }

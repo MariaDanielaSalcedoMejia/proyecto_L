@@ -1,158 +1,92 @@
-/* Reset básico */
+/* Estilos generales */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #7a0909;
-  padding: 20px 0; /* Aumenta la altura del header */
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
+  padding: 0 20px;
+  background-color: rgb(204, 47, 47); /* Color de fondo del contenedor */
+  max-width:92%;
+
 }
 
 .logo {
   display: flex;
   align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
 }
 
 .logo-img {
-  width: 100px; /* Tamaño del logo */
-  height: 100px;
-  margin-right: 10px;
-  margin-left: 0;
+  width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
 }
 
 .titulo {
-  margin-left: 10px;
-  font-size: 24px; /* Tamaño del texto */
+  color: white; /* Color del texto del título */
+  font-weight: bold; /* Negrita para el título */
+  font-size: 20px; /* Tamaño del texto del título */
 }
 
 .nav-menu {
   display: flex;
-  gap: 20px; /* Espaciado entre los elementos del menú */
+  gap: 15px;
 }
 
 .nav-menu a {
-  color: white;
   text-decoration: none;
-  font-size: 18px;
-  padding: 10px 15px;
+  color: white; /* Color del texto del menú */
+  font-size: 20px; /* Tamaño de fuente de los enlaces */
+  font-weight: bold; /* Peso de fuente para enlaces */
+  padding: 8px 12px; /* Espaciado interno para enlaces */
+  transition: all 0.3s; /* Transición suave para todos los cambios */
 }
 
 .nav-menu a:hover {
-  background-color: #dd4f4f; /* Color de fondo al pasar el ratón */
-  color: #fff; /* Color del texto al pasar el ratón */
-  border-radius: 5px; /* Bordes redondeados al pasar el ratón */
+  color: rgb(204, 47, 47); /* Color del texto en hover */
+  background-color: white; /* Fondo del enlace en hover */
+  font-size: 18px; /* Tamaño de fuente más grande en hover */
+  border-radius: 4px; /* Bordes redondeados para un efecto más estilizado */
 }
 
-.logo-principal {
-  width: 100%;
-  height: 100%;
+/* Estilos para el botón de hamburguesa */
+.nav-toggle {
+  display: none; /* Ocultar el botón de hamburguesa en pantallas grandes */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white; /* Color del icono del botón */
 }
 
-/* Medios de consulta para dispositivos móviles y tabletas */
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column; /* Cambia a columna en tabletas */
-    align-items: flex-start;
-  }
-
-  .logo-img {
-    width: 80px; /* Reduce el tamaño del logo */
-    height: 80px;
-  }
-
-  .titulo {
-    font-size: 20px; /* Reduce el tamaño del texto */
-  }
-
-  .nav-menu {
-    gap: 15px; /* Reduce el espaciado entre elementos del menú */
-  }
-
-  .nav-menu a {
-    font-size: 16px; /* Reduce el tamaño del texto del menú */
-    padding: 8px 12px; /* Reduce el padding de los enlaces del menú */
-  }
-}
-
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-  header {
-    padding: 15px 0; /* Reduce el padding del header */
-  }
-
-  .container {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-    flex-direction: column; /* Cambia a columna en móviles */
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo-img {
-    width: 60px; /* Reduce más el tamaño del logo */
-    height: 60px;
-  }
-
-  .titulo {
-    font-size: 18px; /* Reduce aún más el tamaño del texto */
-    margin-left: 0; /* Elimina el margen izquierdo en móviles */
-  }
-
   .nav-menu {
-    flex-direction: column; /* Cambia a columna para mejor adaptabilidad en móviles */
-    gap: 10px; /* Reduce el espaciado entre elementos del menú */
-  }
-
-  .nav-menu a {
-    font-size: 14px; /* Reduce el tamaño del texto del menú */
-    padding: 8px; /* Ajusta el padding */
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-img {
-    width: 50px; /* Tamaño del logo en móviles pequeños */
-    height: 50px;
-  }
-
-  .titulo {
-    font-size: 16px; /* Tamaño del texto en móviles pequeños */
-  }
-
-  .nav-menu {
-    display: none; /* Oculta el menú en móviles pequeños */
+    display: none; /* Ocultar el menú de navegación por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta esto según el tamaño de tu header */
+    left: 0;
+    width: 100%;
+    background: #333; /* Fondo del menú desplegable */
+    padding: 10px;
+    gap: 10px;
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
   }
 
   .nav-menu.active {
-    display: flex; /* Muestra el menú cuando se activa */
-    flex-direction: column; /* Alinea los enlaces en columna */
-    gap: 10px; /* Espaciado entre enlaces */
-    position: absolute;
-    top: 60px; /* Ajusta según sea necesario */
-    right: 20px;
-    background-color: #7a0909; /* Color de fondo del menú desplegable */
-    padding: 10px;
-    border-radius: 5px;
+    display: flex; /* Mostrar el menú cuando la clase active esté aplicada */
   }
-
-  .nav-menu a {
-    font-size: 12px; /* Tamaño del texto del menú en móviles pequeños */
-    padding: 6px; /* Ajusta el padding para móviles pequeños */
+  .container {
+  max-width: 86%;
   }
-
   .nav-toggle {
-    display: inline-block; /* Muestra el botón de navegación */
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px; /* Tamaño del botón */
-    cursor: pointer;
+    display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 758px) {
+.container {
+  max-width: 90%;
   }
 }
