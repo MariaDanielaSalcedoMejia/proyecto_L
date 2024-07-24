@@ -9,12 +9,11 @@ import { PATH } from './core/enum/path.enum';
 export const routes: Routes = [
   {
     path: PATH.HOME,
-    title: 'Home',
+    title: 'inicio',
     children: [
       {
         path: PATH.HOME,
-        title: 'Home',
-
+        title: 'inicio',
         component: InicioComponent,
       },
       {
@@ -37,8 +36,6 @@ export const routes: Routes = [
         title: 'Matrimonios y anchetas',
         component: MatrimonioAnchetasComponent,
       },
-
-
     ],
   },
 ];

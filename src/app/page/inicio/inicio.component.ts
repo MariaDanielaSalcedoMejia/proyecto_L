@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { FritosComponent } from '../fritos/fritos.component';
 
 @Component({
   selector: 'app-inicio',

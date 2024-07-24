@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 50px; /* Margen superior */
+  margin-bottom: 50px; /* Margen inferior */
+  margin-left: 16px; /* Margen izquierdo */
+  margin-right: 16px; /* Margen derecho */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden; /* Oculta el contenido desbordado */
+  border-radius: 8px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 230px; /* Ajusta la altura según sea necesario */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo su proporción */
+  border-radius: 8px;
+}
+
+.image-description {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 20px;
+  color: #f1f1f1;
+  font-weight: bold;
+  background-color: rgba(214, 40, 40, 0.7);
+  border-radius: 10px;
+}
+
+.gallery-title {
+  text-align: center;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(209, 39, 39);
+  border-radius: 10px;
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+}

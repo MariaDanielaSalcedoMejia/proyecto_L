@@ -5,5 +5,5 @@ export enum PATH {
   FRITOS = 'Fritos',
   POSTRES = 'Postres',
   MATRIMONIOS_ANCHETAS = 'Matrimonios y anchetas',
- 
+
 }

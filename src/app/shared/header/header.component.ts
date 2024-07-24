@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-
+import { Router, RouterLink } from '@angular/router';
+import { InicioComponent } from '../../page/inicio/inicio.component';
 @Component({
   selector: 'app-header',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
   menuOpen = false;
