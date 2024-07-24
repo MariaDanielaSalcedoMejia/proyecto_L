@@ -1,17 +1,19 @@
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-}
 
+}
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   background-color: rgb(204, 47, 47); /* Color de fondo del contenedor */
-  max-width:92%;
+  max-width: 2070px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
 
 }
+
 
 .logo {
   display: flex;
@@ -68,7 +70,7 @@ body {
     top: 60px; /* Ajusta esto según el tamaño de tu header */
     left: 0;
     width: 100%;
-    background: rgb(204, 47, 47); /* Fondo del menú desplegable */
+    background: rgba(204, 20, 20, 0.6); /* Fondo del menú desplegable */
     padding: 10px;
     gap: 10px;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
@@ -77,16 +79,9 @@ body {
   .nav-menu.active {
     display: flex; /* Mostrar el menú cuando la clase active esté aplicada */
   }
-  .container {
-  max-width: 86%;
-  }
+
   .nav-toggle {
     display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   }
 }
 
-@media (max-width: 758px) {
-.container {
-  max-width: 90%;
-  }
-}

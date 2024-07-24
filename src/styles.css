@@ -3,4 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho total */
+}
 
