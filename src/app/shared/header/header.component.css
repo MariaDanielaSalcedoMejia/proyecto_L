@@ -68,7 +68,7 @@ body {
     top: 60px; /* Ajusta esto según el tamaño de tu header */
     left: 0;
     width: 100%;
-    background: #333; /* Fondo del menú desplegable */
+    background: rgb(204, 47, 47); /* Fondo del menú desplegable */
     padding: 10px;
     gap: 10px;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
