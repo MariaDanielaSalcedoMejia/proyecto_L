@@ -4,6 +4,7 @@ body {
 
 }
 .container {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +64,9 @@ body {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
+  .container{
+    position:sticky;
+  }
   .nav-menu {
     display: none; /* Ocultar el menú de navegación por defecto */
     flex-direction: column;
