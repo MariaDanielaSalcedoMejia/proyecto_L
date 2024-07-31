@@ -327,7 +327,7 @@ p {
   }
 
   .logo {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .logo-img {
