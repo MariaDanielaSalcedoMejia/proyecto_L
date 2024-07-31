@@ -328,11 +328,13 @@ p {
 
   .logo {
     flex-direction: column;
+    align-items: center; /* Centra el contenido en la columna */
   }
 
   .logo-img {
     width: 30px;
     height: 30px;
+    margin-bottom: 10px; /* Añade margen inferior */
   }
 
   .logo-text {
@@ -362,5 +364,26 @@ p {
 
   .gallery p {
     font-size: 0.875rem;
+  }
+
+  /* Estilos específicos para el logo, título y párrafo en dispositivos móviles */
+  .logo-principal {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+
+  .logo-img {
+    margin: 0 auto 10px; /* Centra la imagen y añade margen inferior */
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+    margin-bottom: 10px; /* Ajusta el margen inferior del título */
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    padding: 15px;/* Ajusta el tamaño del párrafo para pantallas pequeñas */
+    margin: 0; /* Ajusta el margen del párrafo */
   }
 }
