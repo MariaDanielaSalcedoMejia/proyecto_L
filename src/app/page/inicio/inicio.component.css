@@ -156,7 +156,7 @@ h2 {
 /* Estilos de la galería */
 .gallery {
   padding: 2rem 1rem;
-  background: #f4f4f4;
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
 }
 
@@ -178,7 +178,8 @@ h2 {
 }
 
 .gallery-item {
-  background: #fff;
+  background-color: rgba(121, 26, 26, 0.9);
+
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -196,7 +197,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(121, 26, 26, 0.8);
   color: #fff;
   text-align: center;
   padding: 0.5rem;
@@ -240,20 +241,33 @@ h2 {
 
 .text-content {
   text-align: left;
-  /* Alinea el texto a la izquierda dentro de su contenedor */
+  background-color: rgba(121, 26, 26, 0.9);
+  border-radius: 20px;
 }
+.text-content h1, p {
+  color: #fff;
+
+  }
 
 h1 {
-  margin-bottom:30px; /* Elimina el margen por defecto del título */
+  margin-bottom: 30px; /* Margen inferior de 30px */
   font-size: 1.5rem; /* Tamaño de fuente para el título */
   font-weight: bold; /* Hace el título en negrita */
-  align-items: center;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+hr {
+  height: 15px; /* Ajusta la altura (grosor) del <hr> */
+  background-color: rgb(229, 235, 230); /* Opcional: Cambia el color de la línea */
+  border: none; /* Elimina cualquier borde predeterminado */
 }
 
+
 p {
-  margin: 0; /* Elimina el margen por defecto del párrafo */
-  font-size: 1rem; /* Tamaño de fuente para el párrafo */
+  margin: 30px; /* Margen alrededor del párrafo */
+  font-size: 3rem; /* Tamaño de fuente para el párrafo */
+  text-align: justify; /* Justifica el texto */
 }
+
 
 /* Medios de consulta para dispositivos móviles y tabletas */
 @media (max-width: 1024px) {

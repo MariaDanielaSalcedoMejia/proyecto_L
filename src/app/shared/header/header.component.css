@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: rgb(204, 47, 47); /* Color de fondo del contenedor */
+  background-color: rgb(121, 26, 26); /* Color de fondo del contenedor */
   max-width: 2070px; /* Ajusta el ancho máximo según tus necesidades */
   margin: 0 auto;
 
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-menu a:hover {
-  color: rgb(204, 47, 47); /* Color del texto en hover */
+  color: rgb(116, 23, 23); /* Color del texto en hover */
   background-color: white; /* Fondo del enlace en hover */
   font-size: 18px; /* Tamaño de fuente más grande en hover */
   border-radius: 4px; /* Bordes redondeados para un efecto más estilizado */
@@ -63,7 +63,7 @@ body {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
- 
+
   .nav-menu {
     display: none; /* Ocultar el menú de navegación por defecto */
     flex-direction: column;
@@ -71,7 +71,7 @@ body {
     top: 60px; /* Ajusta esto según el tamaño de tu header */
     left: 0;
     width: 100%;
-    background: rgba(204, 20, 20, 0.6); /* Fondo del menú desplegable */
+    background: rgba(129, 23, 23, 0.6); /* Fondo del menú desplegable */
     padding: 10px;
     gap: 10px;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
