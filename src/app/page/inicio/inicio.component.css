@@ -305,6 +305,13 @@ p {
   }
 }
 
+.gallery-item-link {
+  display: block; /* Asegura que el enlace ocupe el espacio completo del contenedor */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: transform 0.1s ease, box-shadow 0.3s ease; /* Transición suave para el efecto de resalte */
+}
+
+
 @media (max-width: 1023px) {
   .header {
     text-align: center;
@@ -370,4 +377,9 @@ p {
     padding: 15px;/* Ajusta el tamaño del párrafo para pantallas pequeñas */
     margin: 0; /* Ajusta el margen del párrafo */
   }
+}
+.gallery-item-link {
+  display: block; /* Asegura que el enlace ocupe el espacio completo del contenedor */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: transform 0.1s ease, box-shadow 0.3s ease; /* Transición suave para el efecto de resalte */
 }
