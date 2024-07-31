@@ -14,5 +14,9 @@ p,h3{
   font-size: 25px;
 }
 h3{
+  font-size: 45px;
   margin-bottom: 10px;
+}
+p{
+  text-align: justify;
 }

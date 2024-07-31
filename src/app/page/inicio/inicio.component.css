@@ -220,24 +220,6 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para el efecto de resalte */
 }
 
-/* Estilos para el WhatsApp
-.fixed-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.fixed-whatsapp:hover {
-  transform: scale(1.1);
-} */
- 
-
 /* Estilos de la sección Sobre Nosotros */
 .sobre-nosotros {
   padding: 50%;

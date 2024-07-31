@@ -1,7 +1,6 @@
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-
 }
 .container {
   display: flex;
@@ -11,9 +10,7 @@ body {
   background-color: rgb(121, 26, 26); /* Color de fondo del contenedor */
   max-width: 2070px; /* Ajusta el ancho máximo según tus necesidades */
   margin: 0 auto;
-
 }
-
 
 .logo {
   display: flex;
@@ -23,6 +20,7 @@ body {
 
 .logo-img {
   width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+  transition: all 0.3s;
 }
 
 .titulo {
@@ -63,7 +61,6 @@ body {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-
   .nav-menu {
     display: none; /* Ocultar el menú de navegación por defecto */
     flex-direction: column;
@@ -85,4 +82,3 @@ body {
     display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   }
 }
-
