@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { FritosComponent } from '../fritos/fritos.component';
+import { WhatsappComponent } from '../../../../components/whatsapp/whatsapp.component';
 
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [],
+  imports: [WhatsappComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css',
 })

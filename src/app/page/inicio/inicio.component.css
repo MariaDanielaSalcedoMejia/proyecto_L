@@ -220,7 +220,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para el efecto de resalte */
 }
 
-/* Estilos para el WhatsApp */
+/* Estilos para el WhatsApp
 .fixed-whatsapp {
   position: fixed;
   bottom: 20px;
@@ -235,7 +235,8 @@ h2 {
 
 .fixed-whatsapp:hover {
   transform: scale(1.1);
-}
+} */
+ 
 
 /* Estilos de la sección Sobre Nosotros */
 .sobre-nosotros {
