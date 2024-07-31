@@ -308,7 +308,7 @@ p {
 .gallery-item-link {
   display: block; /* Asegura que el enlace ocupe el espacio completo del contenedor */
   text-decoration: none; /* Quita el subrayado del enlace */
-  transition: transform 0.1s ease, box-shadow 0.3s ease; /* Transición suave para el efecto de resalte */
+  transition: transform 0.2s ease, box-shadow 0.1s ease; /* Transición suave para el efecto de resalte */
 }
 
 
@@ -381,5 +381,5 @@ p {
 .gallery-item-link {
   display: block; /* Asegura que el enlace ocupe el espacio completo del contenedor */
   text-decoration: none; /* Quita el subrayado del enlace */
-  transition: transform 0.1s ease, box-shadow 0.3s ease; /* Transición suave para el efecto de resalte */
+  transition: transform 0.2s ease, box-shadow 0.1s ease; /* Transición suave para el efecto de resalte */
 }
