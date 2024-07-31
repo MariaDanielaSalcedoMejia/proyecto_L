@@ -33,7 +33,6 @@ body {
 .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
-
 }
 
 .nav-menu {
@@ -54,8 +53,7 @@ body {
 
 /* Estilos del hero */
 .hero {
-  background: url("https://example.com/hero-background.jpg") no-repeat center
-    center/cover;
+  background: url("https://example.com/hero-background.jpg") no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 4rem;
@@ -118,6 +116,7 @@ h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
 .letra {
   font-size: 20px;
   text-align: justify;
@@ -170,6 +169,7 @@ h2 {
   margin-bottom: 6rem;
 }
 
+/* Estilos de la cuadrícula de imágenes */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -177,34 +177,49 @@ h2 {
   margin-top: 2rem;
 }
 
+/* Estilos de los ítems de la galería */
 .gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(121, 26, 26, 0.9);
-
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+  height: 100%; /* Asegura que todos los elementos tengan la misma altura */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto de resalte */
 }
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%; /* Ajusta la altura de las imágenes para que tengan un tamaño uniforme */
+  object-fit: cover; /* Mantiene la proporción de la imagen y la ajusta al contenedor */
   display: block;
 }
 
 .gallery-item p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(121, 26, 26, 0.8);
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem;
   margin: 0;
-  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(121, 26, 26, 0.8);
+  width: 100%; /* Asegura que el párrafo ocupe el ancho completo del contenedor */
 }
 
+/* Estilo del enlace de los ítems de la galería */
+.gallery-item-link {
+  display: block; /* Asegura que el enlace ocupe el espacio completo del contenedor */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto de resalte */
+}
+
+.gallery-item-link:hover .gallery-item {
+  transform: scale(1.05); /* Escala el elemento al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para el efecto de resalte */
+}
+
+/* Estilos para el WhatsApp */
 .fixed-whatsapp {
   position: fixed;
   bottom: 20px;
@@ -221,12 +236,13 @@ h2 {
   transform: scale(1.1);
 }
 
+/* Estilos de la sección Sobre Nosotros */
 .sobre-nosotros {
   padding: 50%;
   margin-left: 100%;
 }
 
-/* Define el contenedor .logo-principal como grid */
+/* Estilos de la cuadrícula de logotipo principal */
 .logo-principal {
   display: grid;
   grid-template-columns: auto 1fr; /* Dos columnas: una para la imagen y otra para el texto */
@@ -244,30 +260,30 @@ h2 {
   background-color: rgba(121, 26, 26, 0.9);
   border-radius: 20px;
 }
+
 .text-content h1, p {
   color: #fff;
+}
 
-  }
-
+/* Estilos para títulos y párrafos */
 h1 {
   margin-bottom: 30px; /* Margen inferior de 30px */
   font-size: 1.5rem; /* Tamaño de fuente para el título */
   font-weight: bold; /* Hace el título en negrita */
   text-align: center; /* Centra el texto horizontalmente */
 }
+
 hr {
   height: 15px; /* Ajusta la altura (grosor) del <hr> */
   background-color: rgb(229, 235, 230); /* Opcional: Cambia el color de la línea */
   border: none; /* Elimina cualquier borde predeterminado */
 }
 
-
 p {
   margin: 30px; /* Margen alrededor del párrafo */
   font-size: 3rem; /* Tamaño de fuente para el párrafo */
   text-align: justify; /* Justifica el texto */
 }
-
 
 /* Medios de consulta para dispositivos móviles y tabletas */
 @media (max-width: 1024px) {
@@ -315,12 +331,15 @@ p {
   }
 
   .logo-img {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
   }
 
   .nav-menu {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -329,10 +348,6 @@ p {
     margin: 0.5rem 0;
   }
 
-  .hero {
-    padding: 2rem;
-  }
-
   .hero-content h1 {
     font-size: 1.75rem;
   }
@@ -347,39 +362,5 @@ p {
 
   .gallery p {
     font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding: 1rem;
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-content p {
-    font-size: 0.75rem;
-  }
-
-  .gallery h1 {
-    font-size: 1.5rem;
-  }
-
-  .gallery p {
-    font-size: 0.75rem;
-  }
-
-  .menu-item {
-    flex: 1 1 100%;
-  }
-
-  .logo-principal {
-    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-  }
-
-  .text-content {
-    text-align: center; /* Centra el texto en pantallas pequeñas */
   }
 }
