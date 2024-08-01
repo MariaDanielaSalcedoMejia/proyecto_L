@@ -8,7 +8,7 @@ html, body {
 
 /* Estilos para la main-container */
 .main-container {
-  background-image: url('../assets/img/fondo2.jpg'); /* Ruta a tu imagen */
+  background-image: url('../assets/img/fondo7.jpeg'); /* Ruta a tu imagen */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -20,4 +20,10 @@ html, body {
 /* Opcional: Asegúrate de que el contenido también ocupe el 100% de la altura */
 .content {
   flex: 1;
+}
+@media (max-width: 768px) {
+  .main-container {
+    background-size: contain; /* Asegura que la imagen se ajuste completamente en el contenedor */
+    background-repeat: repeat;
+  }
 }
