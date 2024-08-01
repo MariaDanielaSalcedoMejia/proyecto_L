@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
 import { FritosComponent } from '../fritos/fritos.component';
 import { WhatsappComponent } from '../../../../components/whatsapp/whatsapp.component';
+
 
 
 @Component({
