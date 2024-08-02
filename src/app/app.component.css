@@ -8,7 +8,8 @@ html, body {
 
 /* Estilos para la main-container */
 .main-container {
-  background-image: url('../assets/img/fondo7.jpeg'); /* Ruta a tu imagen */
+  background-color: rgba(212, 163, 107, 0.22);
+  /* background-image: url('../assets/img/fondo7.jpeg'); */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -23,6 +24,7 @@ html, body {
 }
 @media (max-width: 768px) {
   .main-container {
+
     background-size: contain; /* Asegura que la imagen se ajuste completamente en el contenedor */
     background-repeat: repeat;
   }
